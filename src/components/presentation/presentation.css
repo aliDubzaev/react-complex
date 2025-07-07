@@ -1,0 +1,131 @@
+.presentation {
+  background-color: #f5f5f5;
+  padding: 60px 30px;
+}
+
+.presentationWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.presentationText {
+  flex: 1 1 500px;
+}
+
+.presentationText h5 {
+  color: #777;
+  font-size: 21px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.presentationText h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.presentationText ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.presentationText li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.presentationText hr {
+  border: none;
+  height: 2px;
+  background-color: #f7941d;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.presentationForm .formLabel {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.inputGroup input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.inputGroup button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.inputGroup button:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.formNote {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.formNote .privacy {
+  color: #f7941d;
+  cursor: pointer;
+}
+
+.presentationPhoto {
+  flex: 1 1 300px;
+  position: relative;
+  max-width: 400px;
+}
+
+.presentationPhoto img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+.photoCaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px 16px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.photoCaption h6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.photoCaption p {
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+

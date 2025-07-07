@@ -1,0 +1,143 @@
+.headerBlock img {
+    background-color: transparent;
+}
+
+.lobbyBlock {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 20px 48px 0px rgba(234, 227, 217, 0.32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1180px;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.lobbySection h1 {
+    color: rgba(26, 26, 26, 1);
+    font-family: 'TT Travels Bold';
+    line-height: 100%;
+    letter-spacing: -3px;
+    font-size: clamp(28px, 5vw, 56px);
+    text-align: center;
+}
+
+.headerLobby {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+    padding: 20px 40px;
+}
+
+.headerLobby h4 {
+    background-color: transparent;
+    color: rgba(26, 26, 26, 1);
+    font-family: 'TT Travels';
+    line-height: 100%;
+    font-size: clamp(24px, 2.02vw, 40px);
+}
+
+.textLobby {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 40px 20px;
+    flex-wrap: wrap;
+}
+
+.textLobby div {
+    display: flex;
+    align-items: center;
+    color: rgba(247, 241, 233, 1);
+    padding: 0 6px;
+    border-radius: 5px;
+    gap: 10px;
+    background-color: #F7F1E9;
+}
+
+.textLobby p {
+    color: rgba(26, 26, 26, 1);
+    font-family: 'Helvetica Neue Regular';
+    font-size: clamp(18px, 1vw, 20px);
+    line-height: 100%;
+}
+
+.photoLobby {
+    background-color: transparent;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoLobby img {
+    background-color: transparent;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .lobbyBlock {
+        max-width: 70vw;
+        padding: 10px 0px 0px;
+    }
+    .photoLobby {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    .photoLobby img {
+        max-width: 100vw;
+        max-height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .headerLobby {
+        padding: 20px 10px;
+    }
+    .textLobby {
+        margin-left: 0px;
+    }
+    .lobbyBlock {
+        max-width: 100vw;
+        padding: 10px;
+        min-width: 359px;
+    }
+    .photoLobby {
+        gap: 10px;
+        padding: 0;
+    }
+    .lobbySection {
+        padding: 0px 10px;
+    }
+
+    .photoLobby img {
+        min-height: 220px;
+        max-height: 50vw;
+        object-fit: cover;
+        max-width: 100%;
+    }
+    .textLobby div {
+        background-color: transparent;
+    }
+    .headerLobby img {
+        height: 30px;
+    }
+    .lobbySection h1 {
+        padding: 0px 50px;
+        letter-spacing: -1px;
+    }
+}

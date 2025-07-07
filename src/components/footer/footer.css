@@ -1,0 +1,114 @@
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0;
+}
+
+.footerSection hr {
+    background-color: #EAE3D9;
+    height: 1px;
+    border: none;
+    margin: 20px auto 15px;
+    width: 90%;
+}
+
+.line {
+    max-width: 1180px;
+    width: 90vw;
+    align-self: center;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBlock {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 60px 70px 0;
+}
+
+.headerBlock h2 {
+    font-family: 'TT Travels';
+    font-size: clamp(24px, 1.8vw, 36px);
+    color: #1A1A1A;
+    letter-spacing: -1px;
+    max-width: 645px;
+    line-height: 1.2;
+}
+
+.footerBlock {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 70px;
+    max-width: 1320px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+}
+
+.footerText img {
+    object-fit: contain;
+    max-height: 40px;
+    margin-top: 40px;
+}
+
+.adressBlock,
+.phoneBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.adressBlock p:first-child,
+.phoneBlock p:first-child {
+    font-family: 'Helvetica Neue Regular';
+    font-size: clamp(16px, 1.2vw, 24px);
+}
+
+.adressBlock p:last-child,
+.phoneBlock p:last-child {
+    font-family: 'Helvetica Neue Medium';
+    font-size: clamp(16px, 1.2vw, 24px);
+    max-width: 350px;
+}
+
+.phoneBlock span {
+    color: #A0A747;
+    font-family: 'Helvetica Neue Medium';
+    font-size: clamp(14px, 0.9vw, 16px);
+    align-self: flex-start;
+}
+
+.mapBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}

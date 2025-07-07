@@ -1,0 +1,324 @@
+button,
+.nextBtn {
+  font-family: 'Helvetica Neue Medium', sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 40px;
+  font-size: clamp(16px, 1vw, 20px);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nextBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.paginationContainer {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.line {
+  width: 38px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.activeLine {
+  background-color: #d6d1b2;
+}
+
+.testContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(160, 167, 71, 1);
+  border-radius: 12px;
+  max-width: 1180px;
+  min-height: 546px;
+  margin: 80px auto;
+  padding: 30px;
+  position: relative;
+}
+
+.testContainer h2 {
+  font-family: 'TT Travels';
+  font-size: clamp(24px, 1.8vw, 36px);
+  color: white;
+  text-align: center;
+  max-width: 774px;
+}
+
+.cardsContainer {
+  background-color: transparent;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.cardsContainer p {
+  color: black;
+  margin: 10px 0 0;
+  text-align: left;
+}
+
+.picBlock {
+  position: relative;
+  width: 100%;
+}
+
+.picBlock img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.radioInput,
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.card input:checked ~ .checkmark {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.card input:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.phoneForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.phoneInput {
+  padding: 12px;
+  font-size: 16px;
+  width: 250px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.sendingMessage {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.cardText {
+  background-color: white;
+  padding: 100px;
+}
+
+.parkingCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 50px 10px 50px 10px;
+  width: 300px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.parkingCard.selected {
+  border-color: #4caf50;
+  background-color: #f5fff7;
+}
+
+.parkingCard p {
+  margin: 0;
+  font-size: 26px;
+  color: #000;
+}
+
+.parkingRadio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.parkingCheckmark {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.parkingCard.selected .parkingCheckmark {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.parkingCard.selected .parkingCheckmark::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.messengerOptions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.messengerCard {
+  position: relative;
+  background-color: rgb(132, 138, 47);
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 16px 50px 16px 50px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.messengerCard img {
+  width: 48px;
+  height: 48px;
+}
+
+.messengerCard.selected {
+  border-color: #4caf50;
+  background-color: #f5fff7;
+}
+
+.messengerInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.messengerCard .checkmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.messengerCard.selected .checkmark {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.messengerCard.selected .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.final-step {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(160, 167, 71, 1);
+  max-width: 1100px;
+  color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+
+}
+
+.options img {
+  width: 320px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.options img.selected {
+  border: 2px solid blue;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+input[type="tel"] {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+}

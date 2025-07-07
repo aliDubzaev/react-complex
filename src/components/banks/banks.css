@@ -1,0 +1,32 @@
+.bankSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.bankSection h1 {
+    color: black;
+    font-family: 'TT Travels Bold';
+    font-size: clamp(28px, 5vw, 56px);
+    line-height: 100%;
+    letter-spacing: -3px;
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 970px;
+    padding: 0 20px;
+}
+
+.bankSection div {
+    height: 408px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bankSection img {
+    height: 100%;
+    max-width: 1180px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}

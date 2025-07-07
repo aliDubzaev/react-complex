@@ -1,0 +1,128 @@
+.flatSection {
+  padding: 0 20px;
+}
+
+.flatSection h1 {
+  color: #1a1a1a;
+  font-family: 'TT Travels Bold';
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  font-size: clamp(28px, 5vw, 56px);
+  text-align: center;
+  margin: 120px auto 60px;
+  max-width: 970px;
+}
+
+.flatSection h1 span {
+  background-image: url(./img/headerline.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-color: transparent;
+  line-height: 1.2;
+}
+
+.flatBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  max-width: 1180px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 16px 40px rgba(234, 227, 217, 0.32);
+  margin: 40px auto;
+  padding: 30px;
+  gap: 30px;
+}
+
+.flatText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 520px;
+  padding: 30px 0;
+}
+
+.flatText h4 {
+  font-family: 'TT Travels';
+  font-size: clamp(26px, 2.5vw, 36px);
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.flatText span {
+  background-image: url(./img/line.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.flatText p {
+  font-family: 'Helvetica Neue Regular';
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.flatText a {
+  font-family: 'Helvetica Neue Medium';
+  font-size: 18px;
+  color: rgba(10, 61, 228, 0.84);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(10, 61, 228, 0.25);
+  transition: color 0.2s ease;
+}
+
+.flatText a:hover {
+  color: rgb(71, 181, 255);
+  text-decoration-color: rgba(71, 181, 255, 0.6);
+}
+
+.flatBlock img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 1024px) {
+  .flatBlock {
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .flatText {
+    padding: 20px 0;
+    max-width: 100%;
+  }
+
+  .flatSection h1 {
+    font-size: clamp(24px, 5vw, 48px);
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 540px) {
+  .flatBlock {
+    padding: 16px;
+  }
+
+  .flatText h4 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .flatText p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .flatText a {
+    font-size: 16px;
+  }
+}
