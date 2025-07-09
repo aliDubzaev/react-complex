@@ -3,7 +3,7 @@ import "./finishing.css";
 
 import pic3 from "./img/Frame 1953.png";
 import pic1 from "./img/Frame 1956.png";
-import pic2 from "./img/Image 210.png";
+import pic2 from "./img/image 210.png";
 
 function Finishing() {
   return (
