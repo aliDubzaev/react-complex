@@ -1,7 +1,7 @@
 
 import React from "react";
 import Form from "./form";
-import styles from "./Modal.module.css";
+import styles from "./modal.module.css";
 
 function ModalFlat({ headerText, closeModal }) {
   return (
