@@ -2,7 +2,7 @@
 import "./map.css";
 import mapImage from "./img/map.png";
 import panoramaImage from "./img/panorama.png";
-import icon from "./img/Vector.png";
+import icon from "./img/vector.png";
 import { useState, useRef } from "react";
 
 function Map() {
